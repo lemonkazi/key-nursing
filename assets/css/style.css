@@ -68,6 +68,20 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/judson/v19/FeVSS0Fbvbc14Vxps5xQ3Q.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Khmer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khmer/v29/MjQImit_vPPwpF-B.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khmer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khmer/v29/MjQImit_vPPwpF-B.ttf) format('truetype');
+}
 * {
   padding: 0;
   margin: 0;
@@ -536,3 +550,132 @@ body {
     text-align: center;
   }
 }
+/*Our services pages*/
+.pageheading {
+  background: #560C0C;
+  padding: 102px 20px 102px 140px;
+  margin-top: 10px;
+}
+.pageheading h1 {
+  color: #FFF;
+  font-family: "Khmer";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.container {
+  padding: 59px 89px 59px 89px;
+  position: relative;
+}
+.communityNursing {
+  background: #F8DADA;
+  color: #201919;
+  font-family: "Khmer";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  padding: 48px 15px 48px 140px;
+  position: absolute;
+  left: 0;
+}
+.pageHeadingCon {
+  color: #000;
+  font-family: "Inria Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 2.24px;
+  padding: 20px 40px 20px 40px;
+  margin: 167px 0 10px 0;
+}
+.our_services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-bottom: 160px;
+}
+.our_services .items {
+  background: rgba(240, 181, 181, 0.29);
+}
+.our_services .items .heading {
+  background: rgba(240, 181, 181, 0.29);
+  padding: 11px 5px 11px 26px;
+  color: #000;
+  font-family: "Khmer";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+}
+.our_services .items .contentText {
+  color: #000;
+  font-family: "Inria Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  padding: 20px 5px 20px 28px;
+}
+.our_services .items.contactus {
+  background: #560C0C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our_services .items.contactus a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Inria Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.educationTraining {
+  margin-left: -89px;
+  margin-right: -89px;
+  padding-top: 162px;
+  background: #560C0C;
+  min-height: 200px;
+  position: relative;
+}
+.educationTraining .headTitle {
+  background: #F8DADA;
+  padding: 42px 10px 42px 142px;
+  position: absolute;
+  right: 0;
+}
+.educationTraining .educationContent {
+  max-width: 1316px;
+  margin: 170px auto 0;
+  padding-bottom: 50px;
+}
+.educationTraining .educationContent p {
+  color: #FFF;
+  font-family: "Inria Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.24px;
+  margin-bottom: 60px;
+}
+.educationTraining .educationContent p span {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.educationTraining .educationContent p:nth-child(2) {
+  margin-bottom: 20px;
+}
+.educationTraining .educationContent ul li {
+  color: #FFF;
+  font-family: "Inria Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 0px 10px 50px;
+}
+/*End Our services pages*/
