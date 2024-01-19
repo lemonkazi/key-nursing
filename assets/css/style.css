@@ -141,7 +141,7 @@ body {
 }
 @media only screen and (max-width: 1030px) {
   .header .headerLeft .title {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .header .headerRight {
@@ -553,8 +553,13 @@ body {
 /*Our services pages*/
 .pageheading {
   background: #560C0C;
-  padding: 102px 20px 102px 140px;
+  padding: 50px 20px 50px 140px;
   margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .pageheading {
+    padding: 20px;
+  }
 }
 .pageheading h1 {
   color: #FFF;
@@ -564,9 +569,19 @@ body {
   font-weight: 400;
   letter-spacing: 4px;
 }
+@media only screen and (max-width: 768px) {
+  .pageheading h1 {
+    font-size: 23px;
+  }
+}
 .container {
   padding: 59px 89px 59px 89px;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
 }
 .communityNursing {
   background: #F8DADA;
@@ -576,9 +591,15 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2.8px;
-  padding: 48px 15px 48px 140px;
+  padding: 38px 15px 38px 140px;
   position: absolute;
   left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .communityNursing {
+    padding: 20px;
+    font-size: 23px;
+  }
 }
 .pageHeadingCon {
   color: #000;
@@ -590,11 +611,30 @@ body {
   padding: 20px 40px 20px 40px;
   margin: 167px 0 10px 0;
 }
+@media only screen and (max-width: 768px) {
+  .pageHeadingCon {
+    padding: 0px;
+    font-size: 23px;
+    margin: 97px 0 10px 0;
+  }
+}
 .our_services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
-  margin-bottom: 160px;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 1150px) {
+  .our_services {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .our_services {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 22px;
+  }
 }
 .our_services .items {
   background: rgba(240, 181, 181, 0.29);
@@ -608,6 +648,11 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2.8px;
+}
+@media only screen and (max-width: 1150px) {
+  .our_services .items .heading {
+    font-size: 23px;
+  }
 }
 .our_services .items .contentText {
   color: #000;
@@ -634,24 +679,53 @@ body {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 768px) {
+  .our_services .items.contactus a {
+    font-size: 23px;
+  }
+}
 .educationTraining {
   margin-left: -89px;
   margin-right: -89px;
-  padding-top: 162px;
+  padding-top: 100px;
   background: #560C0C;
-  min-height: 200px;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .educationTraining {
+    padding: 50px 20px 0px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 .educationTraining .headTitle {
   background: #F8DADA;
-  padding: 42px 10px 42px 142px;
+  padding: 22px 10px 22px 142px;
   position: absolute;
   right: 0;
+  color: #000;
+  font-family: "Khmer";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+}
+@media only screen and (max-width: 768px) {
+  .educationTraining .headTitle {
+    padding: 20px;
+    font-size: 23px;
+  }
 }
 .educationTraining .educationContent {
   max-width: 1316px;
   margin: 170px auto 0;
   padding: 0 5%;
+}
+@media only screen and (max-width: 768px) {
+  .educationTraining .educationContent {
+    padding: 0;
+    margin: 115px auto 0;
+  }
 }
 .educationTraining .educationContent p {
   color: #FFF;
@@ -662,10 +736,20 @@ body {
   letter-spacing: 2.24px;
   margin-bottom: 60px;
 }
+@media only screen and (max-width: 768px) {
+  .educationTraining .educationContent p {
+    font-size: 23px;
+  }
+}
 .educationTraining .educationContent p span {
   display: block;
   font-size: 40px;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .educationTraining .educationContent p span {
+    font-size: 25px;
+  }
 }
 .educationTraining .educationContent p:nth-child(2) {
   margin-bottom: 20px;
@@ -677,6 +761,12 @@ body {
   font-style: normal;
   font-weight: 400;
   margin: 0 0px 10px 50px;
+  letter-spacing: 2.8px;
+}
+@media only screen and (max-width: 768px) {
+  .educationTraining .educationContent ul li {
+    font-size: 23px;
+  }
 }
 .educationTraining .serviceimages {
   border-radius: 46px;
@@ -687,6 +777,18 @@ body {
   max-height: 795.745px;
   margin: 0 0 -5px 0;
 }
+@media only screen and (max-width: 1150px) {
+  .educationTraining .serviceimages img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .educationTraining .serviceimages img {
+    margin-right: -20px;
+  }
+}
 .bottomSection {
   background: url("../images/our_services_bg.png");
   background-size: 100%;
@@ -695,6 +797,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .bottomSection {
+    min-height: 250px;
+  }
 }
 .bottomSection .button {
   background: #31483A;
@@ -709,6 +816,12 @@ body {
   text-transform: uppercase;
   padding: 30px 27px;
 }
+@media only screen and (max-width: 768px) {
+  .bottomSection .button {
+    font-size: 23px;
+    padding: 20px;
+  }
+}
 .footer .address {
   margin: 30px 0 50px;
 }
@@ -722,6 +835,11 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .footer .address p {
+    font-size: 23px;
+  }
+}
 .footer .address p:nth-child(2) {
   margin-bottom: 0px;
 }
@@ -734,5 +852,10 @@ body {
   line-height: normal;
   text-align: center;
   margin: 0 0 30px 0;
+}
+@media only screen and (max-width: 768px) {
+  .footer .phone {
+    font-size: 23px;
+  }
 }
 /*End Our services pages*/

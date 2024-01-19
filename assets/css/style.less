@@ -62,7 +62,7 @@ body{
                 font-size: 30px;
             }
             @media only screen and (max-width: 1030px) {
-                font-size: 22px;
+                font-size: 20px;
             }
         }
     }
@@ -461,8 +461,11 @@ body{
 /*Our services pages*/
 .pageheading{
     background: #560C0C;
-    padding: 102px 20px 102px 140px;
+    padding: 50px 20px 50px 140px;
     margin-top: 10px;
+    @media only screen and (max-width: 768px) {
+        padding: 20px;
+    }
     h1{
         color: #FFF;
         font-family: "Khmer";
@@ -470,12 +473,18 @@ body{
         font-style: normal;
         font-weight: 400;
         letter-spacing: 4px;
+        @media only screen and (max-width: 768px) {
+            font-size: 23px;
+        }
     }
 }
 
 .container{
     padding: 59px 89px 59px 89px;
     position: relative;
+    @media only screen and (max-width: 768px) {
+        padding: 20px;
+    }
 }
 
 .communityNursing{
@@ -486,10 +495,15 @@ body{
     font-style: normal;
     font-weight: 400;
     letter-spacing: 2.8px;
-    padding: 48px 15px 48px 140px;
+    padding: 38px 15px 38px 140px;
 
     position: absolute;
     left: 0;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px;
+        font-size: 23px;
+    }
 }
 
 .pageHeadingCon{
@@ -501,13 +515,26 @@ body{
     letter-spacing: 2.24px;
     padding: 20px 40px 20px 40px;
     margin: 167px 0 10px 0;
+    @media only screen and (max-width: 768px) {
+        padding: 0px;
+        font-size: 23px;
+        margin: 97px 0 10px 0;
+    }
 }
 
 .our_services{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    margin-bottom: 160px;
+    gap: 60px;
+    margin-bottom: 100px;
+    @media only screen and (max-width: 1150px) {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 22px;
+    }
     .items{
         background: rgba(240, 181, 181, 0.29);
         .heading{
@@ -519,6 +546,10 @@ body{
             font-style: normal;
             font-weight: 400;
             letter-spacing: 2.8px;
+
+            @media only screen and (max-width: 1150px) {
+                font-size: 23px;
+            }
         }
         .contentText{
             color: #000;
@@ -544,6 +575,9 @@ body{
                 font-weight: 700;
                 letter-spacing: 2.8px;
                 text-transform: uppercase;
+                @media only screen and (max-width: 768px) {
+                    font-size: 23px;
+                }
             }
         }
     }
@@ -552,22 +586,42 @@ body{
 .educationTraining{
     margin-left: -89px;
     margin-right: -89px;
-    padding-top: 162px;
+    padding-top: 100px;
     background: #560C0C;
-    min-height: 200px;
     position: relative;
+    @media only screen and (max-width: 768px) {
+        padding: 50px 20px 0px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 
     .headTitle{
         background: #F8DADA;
-        padding: 42px 10px 42px 142px;
+        padding: 22px 10px 22px 142px;
         position: absolute;
         right: 0;
+
+        color: #000;
+        font-family: "Khmer";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 2.8px;
+
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+            font-size: 23px;
+        }
     }
 
     .educationContent{
         max-width: 1316px;
         margin: 170px auto 0;
         padding: 0 5%;
+        @media only screen and (max-width: 768px) {
+            padding: 0;
+            margin: 115px auto 0;
+        }
         p{
             color: #FFF;
             font-family: "Inria Sans";
@@ -576,10 +630,16 @@ body{
             font-weight: 400;
             letter-spacing: 2.24px;
             margin-bottom: 60px;
+            @media only screen and (max-width: 768px) {
+                font-size: 23px;
+            }
             span{
                 display: block;
                 font-size: 40px;
                 margin-bottom: 40px;
+                @media only screen and (max-width: 768px) {
+                    font-size: 25px;
+                }
             }
 
             &:nth-child(2){
@@ -595,19 +655,30 @@ body{
                 font-style: normal;
                 font-weight: 400;
                 margin: 0 0px 10px 50px;
+                letter-spacing: 2.8px;
+                @media only screen and (max-width: 768px) {
+                    font-size: 23px;
+                }
             }
         }
     }
 
     .serviceimages{
         border-radius: 46px;
-        // background: url("../images/services.png"), lightgray 0px -0.503px / 100% 121.768% no-repeat;
-        // fill: url("../images/services2.png"), lightgray 0px -0.631px / 100% 121.768% no-repeat;
         text-align: right;
         img{
             max-width: 1428.277px;
             max-height: 795.745px;
             margin: 0 0 -5px 0;
+            @media only screen and (max-width: 1150px) {
+                width: 100%;
+                max-width: 700px;
+                height: auto;
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin-right: -20px;
+            }
         }
     }
 }
@@ -622,6 +693,10 @@ body{
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: 768px) {
+        min-height: 250px;
+    }
+
     .button{
         background: #31483A;
         color: #FFF;
@@ -634,6 +709,10 @@ body{
         text-transform: uppercase;
 
         padding: 30px 27px;
+        @media only screen and (max-width: 768px) {
+            font-size: 23px;
+            padding: 20px;
+        }
     }
 }
 
@@ -650,6 +729,9 @@ body{
             line-height: normal;
             text-align: center;
             margin-bottom: 30px;
+            @media only screen and (max-width: 768px) {
+                font-size: 23px;
+            }
 
             &:nth-child(2){
                 margin-bottom: 0px;
@@ -666,6 +748,9 @@ body{
         line-height: normal;
         text-align: center;
         margin: 0 0 30px 0;
+        @media only screen and (max-width: 768px) {
+            font-size: 23px;
+        }
     }
 }
 /*End Our services pages*/
