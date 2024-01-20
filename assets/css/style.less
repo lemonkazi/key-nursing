@@ -830,3 +830,303 @@ body{
     }
 }
 /*END NDSI*/
+
+/*Contact us*/
+.pHeadingContactus{
+    background: #02322C;
+    padding: 50px 20px 50px 140px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 768px) {
+        padding: 20px;
+    }
+    .items{
+        color: #FFF;
+        font-family: "Inria Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px; /* 112.5% */
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+    }
+
+    .item1{
+        width: 35%;
+
+        color: #FFF;
+        font-family: "Khmer";
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60.5px; /* 121% */
+        letter-spacing: 4px;
+    }
+
+    .item2{
+        width: 25%;
+    }
+
+    .item3{
+        width: 40%;
+    }
+}
+
+.contactusContent{
+    background: rgba(2, 50, 44, 0.50);
+    max-width: 1545px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0 0 60px 0;
+
+    .contentHeading{
+        background: rgba(2, 50, 44, 0.50);
+        padding: 25px 10px 25px 50px;
+
+        color: #FFF;
+        font-family: "Khmer";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px; /* 93.75% */
+        letter-spacing: 3.36px;
+    }
+
+    .contentInner{
+        background: #809895;
+        padding: 50px 70px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        .leftBar{
+            width: 58%;
+
+            /*Common*/
+            .inputSection{
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                margin: 0 0 80px 0;
+                input{
+                    width: 50%;
+                    height: 35px;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 2px solid #FFFF;
+                    color: #FFF;
+                    font-size: 32px;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    &::-ms-input-placeholder{
+                        color: #FFF;
+                        font-family: "Khmer";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 45px; /* 140.625% */
+                        letter-spacing: 2.24px;
+                    }
+
+                    &::placeholder{
+                        color: #FFF;
+                        font-family: "Khmer";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 45px; /* 140.625% */
+                        letter-spacing: 2.24px;
+                    }
+                }
+            }
+            .oneColumn{
+                width: 100%;
+                input{
+                    width: 48.8%;
+                }
+            }
+            .lastColumn{
+                margin: 0 0 0 0;
+            }
+            /*Common*/
+
+            .leftBarTop{
+                background: #9AADAB;
+                padding: 15px 55px 30px 15px;
+                h2{
+                    color: #FFF;
+                    font-family: "Khmer";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 45px; /* 140.625% */
+                    letter-spacing: 2.24px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .leftBarMiddle{
+                background: #8EA3A1;
+                padding: 15px 55px 30px 15px;
+                h2{
+                    color: #FFF;
+                    font-family: "Khmer";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 45px; /* 140.625% */
+                    letter-spacing: 2.24px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .leftBarBottom{
+                background: #9AADAB;
+                padding: 15px 55px 30px 15px;
+                h2{
+                    color: #FFF;
+                    font-family: "Khmer";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 45px; /* 140.625% */
+                    letter-spacing: 2.24px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .rightBar{
+            width: 42%;
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            .rightBarContent{
+                border-left:1px solid #FFF;
+                padding: 60px 0;
+                .rightBarInner{
+                    margin: 0 0 0 10px;
+                    min-height: 200px;
+                    background: rgba(255, 255, 255, 0.11);
+                    padding: 8px;
+                    h2{
+                        text-align: center;
+                        color: #FFF;
+                        font-family: "Khmer";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 45px; /* 140.625% */
+                        letter-spacing: 2.24px;
+                    }
+
+                    .optionInput{
+                        display: flex;
+                        align-items: center;
+                        margin: 0 0 15px 0;
+
+                        input[type=checkbox] {
+                            position: relative;
+                            cursor: pointer;
+                        }
+                        input[type=checkbox]:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 16px;
+                            height: 16px;
+                            top: -4px;
+                            left: 0;
+                            border: 2px solid #FFF;
+                            border-radius: 0px;
+                            background-color: #809895;
+                        }
+                        input[type=checkbox]:checked:after {
+                            content: "";
+                            display: block;
+                            width: 5px;
+                            height: 10px;
+                            border: solid #FFF;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                            position: absolute;
+                            top: 0px;
+                            left: 6px;
+                        }
+
+                        label{
+                            color: #FFF;
+                            font-family: "Khmer";
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 45px; /* 140.625% */
+                            letter-spacing: 2.24px;
+                            padding: 0 0 0 25px;
+                            text-align: left;
+                        }
+                    }
+                    .twoCol{
+                        align-items: baseline;
+                    }
+                }
+            }
+        }
+    }
+
+    .button{
+        background: #02322C;
+        color: #FFF;
+        text-align: center;
+        font-family: "Inria Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px; /* 112.5% */
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border: none;
+    }
+}
+
+
+.bottomSectionContact{
+    min-height: 585px;
+    background: url("../images/contact_b.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 768px) {
+        min-height: 250px;
+    }
+
+    .button{
+        background: #31483A;
+        color: #FFF;
+        font-family: "Khmer";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px; /* 112.5% */
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+
+        padding: 30px 27px;
+        @media only screen and (max-width: 768px) {
+            font-size: 23px;
+            padding: 20px;
+        }
+    }
+}
+/*Contact us*/
