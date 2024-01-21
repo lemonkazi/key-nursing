@@ -485,15 +485,27 @@ body {
   }
 }
 .whychoose {
-  padding: 150px 124px 55px;
-  background-color: #FFF;
+  padding: 0px 160px 121px;
+  background: url("../images/home.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 @media only screen and (max-width: 768px) {
   .whychoose {
+    background: none;
     padding: 20px;
   }
 }
-.whychoose h2 {
+.whychoose .whychooseInner {
+  padding: 190px 0 90px 0;
+  background-color: #FFF;
+}
+@media only screen and (max-width: 768px) {
+  .whychoose .whychooseInner {
+    padding: 20px;
+  }
+}
+.whychoose .whychooseInner h2 {
   color: #000;
   font-family: inria-sans;
   font-size: 50px;
@@ -502,31 +514,28 @@ body {
   letter-spacing: 4px;
   padding: 0 0 60px 0;
 }
-.whychoose p {
+@media only screen and (max-width: 768px) {
+  .whychoose .whychooseInner h2 {
+    font-size: 27px;
+    padding: 0 0 30px 0;
+  }
+}
+.whychoose .whychooseInner p {
   color: #000;
   font-family: inria-sans;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2.56px;
-  margin: 0 0 15px 0;
+  margin: 0 0 40px 0;
 }
-.whychoose .button {
-  background: #560C0C;
-  color: #FFF;
-  text-align: center;
-  font-family: inria-sans;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  padding: 18px 0;
-  max-width: 414px;
-  display: block;
-  margin: 20px auto 40px;
+@media only screen and (max-width: 768px) {
+  .whychoose .whychooseInner p {
+    font-size: 23px;
+    margin: 0 0 20px 0;
+  }
 }
-.whychoose .bottom p {
+.whychoose .whychooseInner .bottom p {
   color: #000;
   text-align: center;
   font-family: "Hepta Slab";
@@ -535,7 +544,7 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.whychoose .bottom .phone {
+.whychoose .whychooseInner .bottom .phone {
   color: #000;
   font-family: "Hepta Slab";
   font-size: 24px;
@@ -546,9 +555,24 @@ body {
   margin: 20px auto 0;
 }
 @media only screen and (max-width: 768px) {
-  .whychoose .bottom .phone {
+  .whychoose .whychooseInner .bottom .phone {
     text-align: center;
   }
+}
+.whychoose .button {
+  background: #560C0C;
+  padding: 18px 0;
+  max-width: 414px;
+  display: block;
+  margin: 20px auto 40px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inria Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
 }
 /*Our services pages*/
 .pageheading {
@@ -942,10 +966,18 @@ body {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .pHeadingContactus {
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pHeadingContactus {
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
   }
 }
 .pHeadingContactus .items {
@@ -959,6 +991,27 @@ body {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1530px) {
+  .pHeadingContactus .items {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1270px) {
+  .pHeadingContactus .items {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .pHeadingContactus .items {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pHeadingContactus .items {
+    width: 100%;
+  }
+}
 .pHeadingContactus .item1 {
   width: 35%;
   color: #FFF;
@@ -970,11 +1023,51 @@ body {
   /* 121% */
   letter-spacing: 4px;
 }
+@media only screen and (max-width: 1530px) {
+  .pHeadingContactus .item1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1270px) {
+  .pHeadingContactus .item1 {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .pHeadingContactus .item1 {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .pHeadingContactus .item1 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pHeadingContactus .item1 {
+    width: 100%;
+  }
+}
 .pHeadingContactus .item2 {
   width: 25%;
 }
+@media only screen and (max-width: 768px) {
+  .pHeadingContactus .item2 {
+    width: 100%;
+  }
+}
 .pHeadingContactus .item3 {
   width: 40%;
+}
+@media only screen and (max-width: 1530px) {
+  .pHeadingContactus .item3 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pHeadingContactus .item3 {
+    width: 100%;
+  }
 }
 .contactusContent {
   background: rgba(2, 50, 44, 0.5);
@@ -982,6 +1075,11 @@ body {
   margin: 0px auto;
   text-align: center;
   padding: 0 0 60px 0;
+}
+@media only screen and (max-width: 1070px) {
+  .contactusContent {
+    padding: 0 0 30px 0;
+  }
 }
 .contactusContent .contentHeading {
   background: rgba(2, 50, 44, 0.5);
@@ -995,6 +1093,11 @@ body {
   /* 93.75% */
   letter-spacing: 3.36px;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentHeading {
+    font-size: 32px;
+  }
+}
 .contactusContent .contentInner {
   background: #809895;
   padding: 50px 70px;
@@ -1003,16 +1106,32 @@ body {
   flex-direction: row;
   gap: 50px;
 }
+@media only screen and (max-width: 1070px) {
+  .contactusContent .contentInner {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 .contactusContent .contentInner .leftBar {
   width: 58%;
   /*Common*/
   /*Common*/
+}
+@media only screen and (max-width: 1070px) {
+  .contactusContent .contentInner .leftBar {
+    width: 100%;
+  }
 }
 .contactusContent .contentInner .leftBar .inputSection {
   display: flex;
   flex-direction: row;
   gap: 50px;
   margin: 0 0 80px 0;
+}
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .inputSection {
+    flex-direction: column;
+  }
 }
 .contactusContent .contentInner .leftBar .inputSection input {
   width: 50%;
@@ -1022,6 +1141,11 @@ body {
   border-bottom: 2px solid #FFFF;
   color: #FFF;
   font-size: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .inputSection input {
+    width: 100%;
+  }
 }
 .contactusContent .contentInner .leftBar .inputSection input:focus {
   outline: none;
@@ -1036,6 +1160,11 @@ body {
   /* 140.625% */
   letter-spacing: 2.24px;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .inputSection input::-ms-input-placeholder {
+    font-size: 23px;
+  }
+}
 .contactusContent .contentInner .leftBar .inputSection input::placeholder {
   color: #FFF;
   font-family: "Khmer";
@@ -1046,18 +1175,28 @@ body {
   /* 140.625% */
   letter-spacing: 2.24px;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .inputSection input::placeholder {
+    font-size: 23px;
+  }
+}
 .contactusContent .contentInner .leftBar .oneColumn {
   width: 100%;
 }
 .contactusContent .contentInner .leftBar .oneColumn input {
   width: 48.8%;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .oneColumn input {
+    width: 100%;
+  }
+}
 .contactusContent .contentInner .leftBar .lastColumn {
   margin: 0 0 0 0;
 }
 .contactusContent .contentInner .leftBar .leftBarTop {
   background: #9AADAB;
-  padding: 15px 55px 30px 15px;
+  padding: 15px 7% 30px 15px;
 }
 .contactusContent .contentInner .leftBar .leftBarTop h2 {
   color: #FFF;
@@ -1106,15 +1245,33 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1070px) {
+  .contactusContent .contentInner .rightBar {
+    width: 100%;
+    padding: 0;
+  }
+}
 .contactusContent .contentInner .rightBar .rightBarContent {
   border-left: 1px solid #FFF;
   padding: 60px 0;
+}
+@media only screen and (max-width: 1070px) {
+  .contactusContent .contentInner .rightBar .rightBarContent {
+    border: none;
+    width: 100%;
+    padding: 0;
+  }
 }
 .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner {
   margin: 0 0 0 10px;
   min-height: 200px;
   background: rgba(255, 255, 255, 0.11);
   padding: 8px;
+}
+@media only screen and (max-width: 1070px) {
+  .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner {
+    margin: 0 0 30px 0;
+  }
 }
 .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner h2 {
   text-align: center;

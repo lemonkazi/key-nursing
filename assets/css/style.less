@@ -389,72 +389,92 @@ body{
 }
 
 .whychoose{
-    padding: 150px 124px 55px;
-    background-color: #FFF;
+    padding: 0px 160px 121px;
+    background: url("../images/home.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     @media only screen and (max-width: 768px) {
+        background: none;
         padding: 20px;
     }
-    h2{
-        color: #000;
-        font-family: inria-sans;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 4px;
-        padding: 0 0 60px 0;
-    }
+    
+    .whychooseInner{
+        padding: 190px 0 90px 0;
+        background-color: #FFF;
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+        }
+        h2{
+            color: #000;
+            font-family: inria-sans;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 4px;
+            padding: 0 0 60px 0;
+            @media only screen and (max-width: 768px) {
+                font-size: 27px;
+                padding: 0 0 30px 0;
+            }
+        }
 
-    p{
-        color: #000;
-        font-family: inria-sans;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 2.56px;
-        margin: 0 0 15px 0;
+        p{
+            color: #000;
+            font-family: inria-sans;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 2.56px;
+            margin: 0 0 40px 0;
+            @media only screen and (max-width: 768px) {
+                font-size: 23px;
+                margin: 0 0 20px 0;
+            }
+        }
+
+        .bottom{
+            p{
+                color: #000;
+                text-align: center;
+                font-family: "Hepta Slab";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .phone{
+                color: #000;
+                font-family: "Hepta Slab";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                max-width: 742px;
+                margin: 20px auto 0;
+
+                @media only screen and (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .button{
         background: #560C0C;
+        padding: 18px 0;
+        max-width: 414px;
+        display: block;
+        margin: 20px auto 40px;
+
         color: #FFF;
         text-align: center;
-        font-family: inria-sans;
+        font-family: "Inria Sans";
         font-size: 40px;
         font-style: normal;
         font-weight: 700;
         letter-spacing: 2.8px;
         text-transform: uppercase;
-        padding: 18px 0;
-        max-width: 414px;
-        display: block;
-        margin: 20px auto 40px;
-    }
-
-    .bottom{
-        p{
-            color: #000;
-            text-align: center;
-            font-family: "Hepta Slab";
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        .phone{
-            color: #000;
-            font-family: "Hepta Slab";
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            max-width: 742px;
-            margin: 20px auto 0;
-
-            @media only screen and (max-width: 768px) {
-                text-align: center;
-            }
-        }
     }
 }
 
@@ -838,8 +858,14 @@ body{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     @media only screen and (max-width: 768px) {
         padding: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
     }
     .items{
         color: #FFF;
@@ -850,11 +876,26 @@ body{
         line-height: 45px; /* 112.5% */
         letter-spacing: 2.8px;
         text-transform: uppercase;
+        @media only screen and (max-width: 1530px) {
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 1270px) {
+            font-size: 23px;
+        }
+
+        @media only screen and (max-width: 970px) {
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .item1{
         width: 35%;
-
         color: #FFF;
         font-family: "Khmer";
         font-size: 45px;
@@ -862,14 +903,42 @@ body{
         font-weight: 400;
         line-height: 60.5px; /* 121% */
         letter-spacing: 4px;
+        @media only screen and (max-width: 1530px) {
+            font-size: 25px;
+        }
+
+        @media only screen and (max-width: 1270px) {
+            font-size: 23px;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 970px) {
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .item2{
         width: 25%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .item3{
         width: 40%;
+        @media only screen and (max-width: 1530px) {
+            width: 50%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 }
 
@@ -879,6 +948,9 @@ body{
     margin: 0px auto;
     text-align: center;
     padding: 0 0 60px 0;
+    @media only screen and (max-width: 1070px) {
+        padding: 0 0 30px 0;
+    }
 
     .contentHeading{
         background: rgba(2, 50, 44, 0.50);
@@ -891,6 +963,9 @@ body{
         font-weight: 400;
         line-height: 45px; /* 93.75% */
         letter-spacing: 3.36px;
+        @media only screen and (max-width: 768px) {
+            font-size: 32px;
+        }
     }
 
     .contentInner{
@@ -900,8 +975,15 @@ body{
         display: flex;
         flex-direction: row;
         gap: 50px;
+        @media only screen and (max-width: 1070px) {
+            flex-direction: column;
+            padding: 0;
+        }
         .leftBar{
             width: 58%;
+            @media only screen and (max-width: 1070px) {
+                width: 100%;
+            }
 
             /*Common*/
             .inputSection{
@@ -909,6 +991,9 @@ body{
                 flex-direction: row;
                 gap: 50px;
                 margin: 0 0 80px 0;
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
                 input{
                     width: 50%;
                     height: 35px;
@@ -917,6 +1002,9 @@ body{
                     border-bottom: 2px solid #FFFF;
                     color: #FFF;
                     font-size: 32px;
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
 
                     &:focus{
                         outline: none;
@@ -930,6 +1018,9 @@ body{
                         font-weight: 400;
                         line-height: 45px; /* 140.625% */
                         letter-spacing: 2.24px;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 23px;
+                        }
                     }
 
                     &::placeholder{
@@ -940,6 +1031,9 @@ body{
                         font-weight: 400;
                         line-height: 45px; /* 140.625% */
                         letter-spacing: 2.24px;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 23px;
+                        }
                     }
                 }
             }
@@ -947,6 +1041,9 @@ body{
                 width: 100%;
                 input{
                     width: 48.8%;
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
             }
             .lastColumn{
@@ -956,7 +1053,7 @@ body{
 
             .leftBarTop{
                 background: #9AADAB;
-                padding: 15px 55px 30px 15px;
+                padding: 15px 7% 30px 15px;
                 h2{
                     color: #FFF;
                     font-family: "Khmer";
@@ -1004,14 +1101,26 @@ body{
             padding: 50px 0;
             display: flex;
             align-items: center;
+            @media only screen and (max-width: 1070px) {
+                width: 100%;
+                padding: 0;
+            }
             .rightBarContent{
                 border-left:1px solid #FFF;
                 padding: 60px 0;
+                @media only screen and (max-width: 1070px) {
+                    border: none;
+                    width: 100%;
+                    padding: 0;
+                }
                 .rightBarInner{
                     margin: 0 0 0 10px;
                     min-height: 200px;
                     background: rgba(255, 255, 255, 0.11);
                     padding: 8px;
+                    @media only screen and (max-width: 1070px) {
+                        margin: 0 0 30px 0;
+                    }
                     h2{
                         text-align: center;
                         color: #FFF;
