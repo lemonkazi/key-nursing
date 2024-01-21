@@ -1098,6 +1098,15 @@ body {
     font-size: 32px;
   }
 }
+.contactusContent .successMessage {
+  color: #FFF;
+  font-family: "Khmer";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.24px;
+  padding: 25px 0 5px 0;
+}
 .contactusContent .contentInner {
   background: #809895;
   padding: 50px 70px;
@@ -1348,6 +1357,7 @@ body {
   text-transform: uppercase;
   padding: 10px 30px;
   border: none;
+  cursor: pointer;
 }
 .bottomSectionContact {
   min-height: 585px;
