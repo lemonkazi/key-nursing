@@ -50,8 +50,9 @@
         // echo "<pre>";
         // print_r($_POST);
 
-        $to = "mahmudkhan.sumon@gmail.com";
-        $subject = "Referral Form Data";
+        $to = "admin@thekeynursing.com.au";
+        //$to = "lemonpstu09@gmail.com";
+        $subject = "Referral Form - The Key Nursing Australia";
 
         $p_fname = (isset($_POST['p_fname'])) ? $_POST['p_fname'] : "";
         $p_lname = (isset($_POST['p_lname'])) ? $_POST['p_lname'] : "";
@@ -74,7 +75,7 @@
         $message = "
             <html>
             <head>
-            <title>Referral Form Data</title>
+            <title>Referral Form - The Key Nursing Australia</title>
             </head>
             <body>
             <h2>Patient Information</h2>
@@ -102,8 +103,8 @@
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
         // Additional headers
-        $headers .= "From: your_email@example.com\r\n";
-        $headers .= "Cc: another_email@example.com\r\n";
+        $headers .= "From: lemonkazi@thekeynursing.com.au";
+        //$headers .= "Cc: another_email@example.com\r\n";
 
         // Send the email
         mail($to, $subject, $message, $headers);
