@@ -242,7 +242,7 @@
 
 
     <div class="bottomSectionContact">
-        <a class="button" href="#">CONTACT US NOW</a>
+        <a class="button" href="contact_us.php">CONTACT US NOW</a>
     </div>
 
     <div class="footer">
