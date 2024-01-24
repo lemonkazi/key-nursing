@@ -6,6 +6,16 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="  crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MJT8XXN90">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8MJT8XXN90');
+    </script>
     <script src="./assets/js/custom.js"></script>
     <script>
         function validateForm() {
@@ -50,7 +60,8 @@
         // echo "<pre>";
         // print_r($_POST);
 
-        $to = "admin@thekeynursing.com.au";
+        //$to = "admin@thekeynursing.com.au";
+        $to = "jmmaponde@gmail.com";
         //$to = "lemonpstu09@gmail.com";
         $subject = "Referral Form - The Key Nursing Australia";
 
@@ -103,7 +114,7 @@
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
         // Additional headers
-        $headers .= "From: lemonkazi@thekeynursing.com.au";
+        $headers .= "From: admin@thekeynursing.com.au";
         //$headers .= "Cc: another_email@example.com\r\n";
 
         // Send the email
@@ -129,7 +140,7 @@
             <ul class="menu">
                 <li><a href="index.html">About Us</a></li>
                 <li><a href="our_services.html">Our Services</a></li>
-                <li><a href="ndsi.html">NDSI</a></li>
+                <li><a href="ndis.html">NDIS</a></li>
                 <li><a href="contact_us.php">Contact Us</a></li>
             </ul>
 
