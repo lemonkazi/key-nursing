@@ -1,11 +1,3 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
-
-$mail = new PHPMailer(true);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,46 +132,17 @@ $mail = new PHPMailer(true);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-
-        $mail = new PHPMailer(true);
-
-        try {
-            // Server settings
-            $mail->isSMTP();
-            $mail->Host       = 'thekeynursing.com.au';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = '*******@thekeynursing.com.au';
-            $mail->Password   = '*********';
-            $mail->SMTPSecure = 'ssl';  // Use 'tls' or 'ssl' based on your hosting provider
-            $mail->Port       = 465;    // Use the appropriate SMTP port
-
-            // Recipients
-            $mail->setFrom('******@thekeynursing.com.au', 'The Key Nursing');
-            $mail->addAddress($to);
-
-            // Content
-            $mail->isHTML(true);
-            $mail->Subject = $subject;
-            $mail->Body    = $message;
-
-            // Send email
-            $mail->send();
-            $successMessage = "Thank you! Your referral form has been submitted successfully.";
-        } catch (Exception $e) {
-            $successMessage = "Failed to send the email. Error: {$mail->ErrorInfo}";
-        }
-    
         // Additional headers
-        //$headers .= "From: admin@thekeynursing.com.au";
+        $headers .= "From: admin@thekeynursing.com.au";
         //$headers .= "Cc: another_email@example.com\r\n";
 
         // Send the email
-        // mail($to, $subject, $message, $headers);
+        mail($to, $subject, $message, $headers);
 
-        // $successMessage = "";
-        // if (mail($to, $subject, $message, $headers)) {
-        //     $successMessage = "Thank you! Your referral form has been submitted successfully.";
-        // }
+        $successMessage = "";
+        if (mail($to, $subject, $message, $headers)) {
+            $successMessage = "Thank you! Your referral form has been submitted successfully.";
+        }
     }
     ?>
 
