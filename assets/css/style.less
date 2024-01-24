@@ -1193,6 +1193,31 @@ body{
                     .twoCol{
                         align-items: baseline;
                     }
+
+                    .optionInputText{
+                        text-align: left;
+                        textarea{
+                            padding: 5px;
+                            min-height: 130px;
+                            width: 90%;
+                            font-size: 23px;
+                            &:focus{
+                                outline: none;
+                            }
+
+                            &::-ms-input-placeholder{
+                                color: #000;
+                                font-family: "Khmer";
+                                font-size: 18px;
+                            }
+
+                            &::placeholder{
+                                color: #000;
+                                font-family: "Khmer";
+                                font-size: 23px;
+                            }
+                        }
+                    }
                 }
             }
         }

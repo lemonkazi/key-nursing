@@ -50,6 +50,17 @@
 
             return true;
         }
+
+        function toggleOtherInput() {
+            var otherCheckbox = document.getElementById('otherCheckbox');
+            var otherInputSection = document.getElementById('otherInputSection');
+
+            if (otherCheckbox.checked) {
+                otherInputSection.style.display = 'block';
+            } else {
+                otherInputSection.style.display = 'none';
+            }
+        }
     </script>
 </head>
 <body>
@@ -79,9 +90,17 @@
         $r_contact = (isset($_POST['r_contact'])) ? $_POST['r_contact'] : "";
 
         $support_need = "";
+        $other_support_need = "";
+
         if(isset($_POST['support_need']) && count($_POST['support_need']) > 0){
             $support_need = implode(",", $_POST['support_need']);
+
+            if (in_array("Other", $_POST['support_need']) && isset($_POST['other_support_need'])) {
+                $other_support_need = $_POST['other_support_need'];
+                $support_need .= " : " . $other_support_need;
+            }
         }
+        
 
         $message = "
             <html>
@@ -239,8 +258,12 @@
                                 </div>
 
                                 <div class="optionInput">
-                                    <input type="checkbox" value="Other" name="support_need[]" />
+                                    <input type="checkbox" value="Other" name="support_need[]" id="otherCheckbox" onclick="toggleOtherInput()"  />
                                     <label>Other</label>
+                                </div>
+
+                                <div class="optionInputText" id="otherInputSection" style="display: none;">
+                                    <textarea name="other_support_need" name="other_support_need" placeholder="Specify Other"></textarea>
                                 </div>
 
                             </div>

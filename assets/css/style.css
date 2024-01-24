@@ -1343,6 +1343,28 @@ body {
 .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .twoCol {
   align-items: baseline;
 }
+.contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInputText {
+  text-align: left;
+}
+.contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInputText textarea {
+  padding: 5px;
+  min-height: 130px;
+  width: 90%;
+  font-size: 23px;
+}
+.contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInputText textarea:focus {
+  outline: none;
+}
+.contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInputText textarea::-ms-input-placeholder {
+  color: #000;
+  font-family: "Khmer";
+  font-size: 18px;
+}
+.contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInputText textarea::placeholder {
+  color: #000;
+  font-family: "Khmer";
+  font-size: 23px;
+}
 .contactusContent .button {
   background: #02322C;
   color: #FFF;
