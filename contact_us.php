@@ -186,7 +186,7 @@ $mail = new PHPMailer(true);
     <div class="header">
         <div class="headerLeft">
             <div class="logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="./assets/images/logo.png" alt="Logo">
                 </a>
             </div>
@@ -194,10 +194,10 @@ $mail = new PHPMailer(true);
         </div>
         <div class="headerRight">
             <ul class="menu">
-                <li><a href="index.html">About Us</a></li>
-                <li><a href="our_services.html">Our Services</a></li>
-                <li><a href="ndis.html">NDIS</a></li>
-                <li><a href="contact_us.php">Contact Us</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="our_services">Our Services</a></li>
+                <li><a href="ndis">NDIS</a></li>
+                <li><a href="contact_us">Contact Us</a></li>
             </ul>
 
             <div class="nav-right">
