@@ -470,6 +470,11 @@ body {
   padding: 30px 10%;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .ourvalues .containItem .item .heading {
+    font-size: 23px;
+  }
+}
 .ourvalues .containItem .item .contentText {
   padding: 33px 33px 90px 33px;
   color: #FFF;
@@ -482,6 +487,11 @@ body {
 @media only screen and (max-width: 1200px) {
   .ourvalues .containItem .item .contentText {
     font-size: 27px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ourvalues .containItem .item .contentText {
+    font-size: 20px;
   }
 }
 .whychoose {
@@ -638,7 +648,7 @@ body {
 @media only screen and (max-width: 768px) {
   .pageHeadingCon {
     padding: 0px;
-    font-size: 23px;
+    font-size: 20px;
     margin: 97px 0 10px 0;
   }
 }
@@ -925,7 +935,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .ndsiContent .contentInner ul li {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 .bottomSectionNdsi {
@@ -1095,7 +1105,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .contactusContent .contentHeading {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 .contactusContent .successMessage {
@@ -1171,7 +1181,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .contactusContent .contentInner .leftBar .inputSection input::-ms-input-placeholder {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 .contactusContent .contentInner .leftBar .inputSection input::placeholder {
@@ -1186,7 +1196,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .contactusContent .contentInner .leftBar .inputSection input::placeholder {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 .contactusContent .contentInner .leftBar .oneColumn {
@@ -1218,6 +1228,11 @@ body {
   letter-spacing: 2.24px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .leftBarTop h2 {
+    font-size: 23px;
+  }
+}
 .contactusContent .contentInner .leftBar .leftBarMiddle {
   background: #8EA3A1;
   padding: 15px 55px 30px 15px;
@@ -1233,6 +1248,11 @@ body {
   letter-spacing: 2.24px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .leftBarMiddle h2 {
+    font-size: 23px;
+  }
+}
 .contactusContent .contentInner .leftBar .leftBarBottom {
   background: #9AADAB;
   padding: 15px 55px 30px 15px;
@@ -1247,6 +1267,11 @@ body {
   /* 140.625% */
   letter-spacing: 2.24px;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .leftBar .leftBarBottom h2 {
+    font-size: 23px;
+  }
 }
 .contactusContent .contentInner .rightBar {
   width: 42%;
@@ -1292,6 +1317,11 @@ body {
   line-height: 45px;
   /* 140.625% */
   letter-spacing: 2.24px;
+}
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner h2 {
+    font-size: 23px;
+  }
 }
 .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInput {
   display: flex;
@@ -1339,6 +1369,11 @@ body {
   letter-spacing: 2.24px;
   padding: 0 0 0 25px;
   text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .optionInput label {
+    font-size: 20px;
+  }
 }
 .contactusContent .contentInner .rightBar .rightBarContent .rightBarInner .twoCol {
   align-items: baseline;
