@@ -1416,6 +1416,11 @@ body {
   border: none;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .contactusContent .button {
+    font-size: 23px;
+  }
+}
 .bottomSectionContact {
   min-height: 585px;
   background: url("../images/contact_b.png");
