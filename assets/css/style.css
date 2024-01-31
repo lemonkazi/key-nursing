@@ -337,7 +337,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .banner .bannerLeft p {
-    font-size: 32px;
+    font-size: 20px;
+    letter-spacing: 2.24px;
   }
 }
 .banner .bannerLeft .button {
@@ -364,6 +365,7 @@ body {
 @media only screen and (max-width: 768px) {
   .banner .bannerLeft .button {
     margin: 20px auto 0;
+    font-weight: 400;
   }
 }
 .banner .bannerRight {
@@ -399,6 +401,11 @@ body {
   font-weight: 300;
   letter-spacing: 2.24px;
 }
+@media only screen and (max-width: 768px) {
+  .ourservices p {
+    font-size: 20px;
+  }
+}
 .ourservices .button {
   background: #560C0C;
   color: #FFF;
@@ -413,6 +420,11 @@ body {
   display: block;
   padding: 20px 0;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .ourservices .button {
+    font-size: 23px;
+  }
 }
 .ourvalues {
   background: #31483A;
@@ -492,6 +504,7 @@ body {
 @media only screen and (max-width: 768px) {
   .ourvalues .containItem .item .contentText {
     font-size: 20px;
+    padding: 33px 33px 33px 33px;
   }
 }
 .whychoose {
@@ -541,7 +554,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .whychoose .whychooseInner p {
-    font-size: 23px;
+    font-size: 20px;
     margin: 0 0 20px 0;
   }
 }
@@ -584,7 +597,13 @@ body {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-/*Our services pages*/
+@media only screen and (max-width: 768px) {
+  .whychoose .button {
+    font-size: 23px;
+    font-weight: 400;
+  }
+}
+/*Our services pages 01704163767*/
 .pageheading {
   background: #560C0C;
   padding: 50px 20px 50px 140px;
@@ -605,7 +624,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .pageheading h1 {
-    font-size: 23px;
+    font-size: 27px;
   }
 }
 .container {
@@ -716,6 +735,7 @@ body {
 @media only screen and (max-width: 768px) {
   .our_services .items.contactus a {
     font-size: 23px;
+    font-weight: 400;
   }
 }
 .educationTraining {
@@ -871,7 +891,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .footer .address p {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 .footer .address p:nth-child(2) {
@@ -889,7 +909,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .footer .phone {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 /*End Our services pages*/
@@ -1056,6 +1076,7 @@ body {
 @media only screen and (max-width: 768px) {
   .pHeadingContactus .item1 {
     width: 100%;
+    font-size: 27px;
   }
 }
 .pHeadingContactus .item2 {
@@ -1419,6 +1440,7 @@ body {
 @media only screen and (max-width: 768px) {
   .contactusContent .button {
     font-size: 23px;
+    font-weight: 400;
   }
 }
 .bottomSectionContact {
